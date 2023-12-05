@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Raleway', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1.6;
+}
+.navbar {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 6%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    border-bottom: solid black 1px;
+}
+
+.logo img {
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.bar .fa:hover {
+    background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 17px;
+    padding: 5px 5px;
+    padding-top: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    padding: 10px 10px;    
+    font-family: 'Outfit';
+}
+
+nav ul li a:hover {
+    background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+    transition: .3s;
+    color: white;
+    border-radius: 10px;
+}
+
+.bar {
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.dropdown {
+    align-items: center;
+    float: right;
+    overflow: hidden;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    min-width: 170px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.963);
+    right: 0;
+    margin-top: 0px;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: black;
+    font-family: 'Outfit';
+}
+
+.dropdown-content a:hover {
+    background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+header {
+    margin-top: 70px;
+    text-align: center;
+    padding: 20px;
+    color: #032A63;
+    max-width: 900px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.container {
+    max-width: 900px;
+    margin-right: 50px;
+    margin-left: 70px;
+    padding: 0in;
+
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    color: #032A63;
+}
+
+.container h2 {
+    color: #032A63;
+}
+
+.container p {
+    color: #000000;
+}
+
+/* Sidebar on the right side */
+aside.options {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    width: 230px; 
+    background-color: #032A63;
+    padding: 20px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+aside.options ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside.options li {
+    margin-bottom: 10px;
+}
+
+aside.options a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+aside.options a:hover {
+    text-decoration: underline;
+}
+
+/* Style the menu button */
+button.menu-toggle {
+    display: none; /* Hide the button on larger screens */
+    background: #032A63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    aside.options {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        background-color: #032A63;
+        padding: 20px;
+        color: #FFF;
+        display: none; /* Hide the aside menu by default on smaller screens */
+        z-index: 1; /* Add this line to ensure the aside menu is on top of other content */
+    }
+
+
+    aside.options ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside.options li {
+        margin-bottom: 10px;
+    }
+
+    aside.options a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    aside.options a:hover {
+        text-decoration: underline;
+    }
+
+    aside.options.show-menu {
+        display: block; /* Show the aside menu when the show-menu class is applied */
+    }
+
+    aside.options.show-menu {
+        display: block; /* Show the aside menu when the show-menu class is applied */
+    }
+
+        button.menu-toggle {
+        display: block;
+    }
+}
+
+.image-container {
+    display: flex;
+    margin-left: 150px;
+  }
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+@media (max-width: 767px) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+ 
+  @media (min-width: 768px) {
+    img {
+      max-width: 800px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+  
+
+/* Footer */
+footer{
+    background-color: white;
+    margin-top: 80px;
+}
+footer .head{
+    text-align: center;
+    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+}
+.head h1{
+    padding-top: 8px;
+    font-size: 20px;
+}
+.head .head-btn button{
+    background: transparent;
+    border: black 1px solid;
+    padding: 4px 20px;
+    border-radius: 18px;
+    margin: 5px 30px 10px 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.head .head-btn button:hover{
+    background-image: linear-gradient(to bottom right, #002661, #92FFC0);
+    color: white;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 22% 28%;
+  padding: 5px 30px;
+}
+.footer-grid-item {
+  font-size: 14px;
+  text-align: center;
+}
+.footer-grid-item h1{
+    font-size: 20px;
+    padding-top: 8px;
+}
+#first{
+    padding: 0 40px;
+}
+#first img{
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+    padding-top: 5px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#first p{
+    padding-top: 20px;
+}
+#second{
+    padding: 0 40px;
+    text-align: left;
+}
+#second p{
+    padding: 15px 0 10px 0;
+}
+#second i{
+    font-size: 20px;
+    margin-right: 12px;
+}
+#third a{
+    text-decoration: none;
+    color: black;
+}
+#third a:hover{
+    color: blue;
+}
+#fourth{
+    text-align: left;
+    padding: 0 20px 0 60px;
+}
+#fourth p{
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+#fourth .sendmail{
+    padding-top: 30px;
+    display: flex;
+}
+#fourth .sendmail input{
+    padding: 4px;
+    background: none;
+    border: solid 1px black;
+    width: 360px;
+}
+#fourth .sendmail button{
+    padding: 1px 10px;
+    background-image: linear-gradient(to bottom right, #002661, #92FFC0);
+    border: none;
+    cursor: pointer;
+}
+#fourth .sendmail button i{
+    font-size: 14px;
+}
+.footer-foot{
+    display: flex;
+    padding: 8px 0;
+    border-top: black 1px solid;
+}
+.footer-foot p{
+    margin: 0 auto;
+}
+.foot-icon i{
+    margin: 0 20px 0 0;
+    font-size: 20px;
+    color: black;
+}

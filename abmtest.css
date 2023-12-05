@@ -1,0 +1,249 @@
+* {
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 45px; 
+}
+
+#section1 h2 {
+    width: 98%;
+    height: 10vh;
+    text-align: center;
+    background: #D9D9D9;
+    font-size: 2.5rem;
+    margin-left: 1%;
+    margin-top: 3vh;
+}
+#section2 h2 {
+    width: 98%;
+    height: 10vh;
+    text-align: center;
+    background: #D9D9D9;
+    font-size: 2.5rem;
+    margin-left: 1%;
+    margin-top: 3vh;
+}
+#section3 h2 {
+    width: 98%;
+    height: 10vh;
+    text-align: center;
+    background: #D9D9D9;
+    font-size: 2.5rem;
+    margin-left: 1%;
+    margin-top: 3vh;
+}
+#section4 h2 {
+    width: 98%;
+    height: 10vh;
+    text-align: center;
+    background: #D9D9D9;
+    font-size: 2.5rem;
+    margin-left: 1%;
+    margin-top: 3vh;
+}
+#section5 h2 {
+    width: 98%;
+    height: 10vh;
+    text-align: center;
+    background: #D9D9D9;
+    font-size: 2.5rem;
+    margin-left: 1%;
+    margin-top: 3vh;
+}
+ #answer{
+    border-top: 4px solid;
+    margin-top: 5px;
+    width: 70%;
+    margin-left: 12vh;
+
+ }
+.question1 { 
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+    padding-top: 2vh;
+}
+
+.in-q1 h1 {
+    text-align: center;
+    width: 70%;
+    font-weight: 700;   
+    margin-left: 12vh;
+    border-bottom: 2vh solid;
+    border-color: green;
+}
+
+
+.first-choice {
+    text-align: justify;
+    width: 90%;
+    font-weight: 700;
+    height: 9vh;
+    font-size: 1.4rem;
+    margin-left: 4vh;
+    border-radius: 12px;
+    background: rgba(25, 66, 42, 0.50);
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 18px;
+}
+
+.second-choice {
+    text-align: justify;
+    width: 90%;
+    font-weight: 700;
+    height: 9vh;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    background: rgba(25, 66, 42, 0.50);
+    margin-top: 3vh;
+    margin-left: 4vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 18px;
+}
+
+.third-choice {
+    text-align: justify;
+    width: 90%;
+    font-weight: 700;
+    border-radius: 12px;
+    background: rgba(25, 66, 42, 0.50);
+    height: 9vh;
+    font-size: 1.4rem;
+    margin-top: 3vh;
+    margin-left: 4vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 18px;
+}
+
+.question2 { 
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+    margin-top: 5vh;
+    padding-top: 2vh;
+}
+.hidden {
+    display: none;
+}
+.btn {
+    margin-top: 20px;
+    margin-left: 80%;
+    color: white;
+    background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);
+    width: 20%;
+    height: 4vh;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 15px;
+}
+.btn:hover {
+    font-size: 1.9rem;
+    color: blue;
+    transition: 1s;
+}
+.bord{
+    width: 98%;
+    height: 450px;
+    margin-top: 1vh;
+    margin-left: 1%;
+}
+input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+ #result{
+    background-color: aliceblue; 
+    height:  550px;
+    padding-top: 2%;
+ }
+#result button{
+    margin: 120px 150px;
+    border: 2px solid;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#result button a{
+    text-decoration: none;
+    color: black;
+}
+#result img{
+    margin-left: 240px;
+}
+#result-description{
+    margin-top: 110px;
+}
+.in-div{
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    background: linear-gradient(135deg, #002661 0%, #92FFC0 100%);
+    width: 90%;
+    height: 50%;
+    margin-left: 6vh;
+    margin-top: -2.2vh;
+    
+}
+.bord h2{
+     margin-left: 30%;
+     font-weight: 900;
+}
+.bord .h1{
+    width: 25%;
+    position: absolute;
+    margin-left: 25vh;
+    margin-top: -23vh;
+}
+.bord .h2{
+    width: 5%;
+    position: absolute;
+    margin-left: 9vh;
+}
+.bord .h3{
+    width: 5%;
+    position: absolute;
+    margin-left: 5vh;
+    margin-top: -20vh;
+}
+.bord .h4{
+    width: 5%;
+    position: absolute;
+    margin-left: 70vh;
+    margin-top: -19vh;
+}
+.bord .h5{
+    width: 5%;
+    position: absolute;
+    margin-left: 60vh;
+    margin-top: -4vh;
+}
+.bord .h6{
+    width: 4%;
+    position: absolute;
+    margin-left: 40vh;
+    margin-top: 1vh;
+}
+.bord p{
+    width: 100%;
+    height: 20vh;
+    margin-top: 4vh;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 2rem;
+    font-size: 1rem;
+}

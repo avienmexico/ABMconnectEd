@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Outfit:wght@600&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>ABMconnectEd</title>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <div class="bottom-page1">
+                <section id="topbanner">A path to success, shared.</section>
+
+                <h1>ABMconnectEd</h1>
+                
+                <section id="lowerbanner">
+                    <ul>
+                        <ol>Bridging paths</ol>
+                        <ol>Igniting potential</ol>
+                        <ol>Fostering bonds</ol>
+                    </ul>
+                </section>
+
+                <section id="button">
+                    <a href="home.html" onclick="storeData()">Learn more</a>
+                </section>
+            </div>
+            <video src="img/Vid2.mp4" autoplay loop muted ></video>
+        </div>
+    </div>
+
+    <script>
+        function storeData() {
+            const data = {
+                click: 1
+            };  
+    
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_data.php", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Response from the server
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+        </script>
+
+</body>
+</html>
+
+

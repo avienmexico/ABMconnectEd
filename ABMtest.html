@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="abmtest.css">
+    <title>ABM Strand Assessment</title>
+</head>
+<body>
+    <div class="container">
+        <form id="quiz-form">
+            <!-- Section 1: General Aptitude -->
+            <section id="section1">
+                <h2>Section 1: General Aptitude</h2>
+                <div class="question1">
+                        <div class="in-q1">
+                                <h1>1. When faced with a challenge, how do you typically respond?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"> <input type="radio" name="q1" value="3" placeholder="a"> &emsp; I take a systematic approach, breaking the problem down into smaller steps.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q1" value="2">&emsp; &emsp;  I explore different possibilities and try unconventional solutions.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q1" value="1" class="lingin">&emsp;&emsp;  I seek advice from others and collaborate to find a solution.</li>
+                                </ol>
+                       
+                </div>
+
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>2. How do you handle setbacks or failures?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"> <input type="radio" name="q2" value="3"> I see them as opportunities to learn and grow, and I try again with improved strategies.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q2" value="2"> I feel discouraged but eventually bounce back and try a different approach.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q2" value="1"> I tend to dwell on them and may feel reluctant to try again.</li>
+                                </ol>
+                       
+                </div>        
+
+
+
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>3. In group projects, how do you contribute to decision-making?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"> <input type="radio" name="q3" value="3"> I actively participate in discussions and propose well-thought-out suggestions.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q3" value="2"> I listen to others' ideas and contribute with my own insights when necessary.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q3" value="1"> I prefer to let others make decisions and follow their lead.</li>
+                                </ol>
+                       
+                </div>        
+
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>4. What is your attitude towards learning new skills or acquiring knowledge?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q4" value="3">I am highly motivated and eager to expand my skillset and knowledge base.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q4" value="2"> I am open to learning, but I prefer focusing on areas that interest me the most.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q4" value="1"> I am hesitant about learning new things and prefer sticking to what I already know.</li>
+                                </ol>
+                       
+                </div>    
+
+
+
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>5. How do you adapt to changes or unexpected situations?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"> <input type="radio" name="q5" value="3"> I am flexible and embrace changes, finding ways to adapt quickly.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q5" value="2"> I adjust to changes with some effort and may need time to fully adapt.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q5" value="1"> I find it challenging to cope with changes and prefer stability.</li>
+                                </ol>
+                       
+                </div>    
+                <button class="btn" type="button" onclick="submitSection(1)">Submit</button>
+            </section>
+
+
+
+            <section id="section2" class="hidden">
+                <h2>Section 2: Interests and Passions</h2>
+                <div class="question1">
+                        <div class="in-q1">
+                                <h1>1. How do you feel about working with numbers and financial data?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>                        
+                                
+                                        <li class="first-choice"> <input type="radio" name="q11" value="3"> I enjoy working with numbers and find financial concepts interesting.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q11" value="2"> I am comfortable with numbers but don't have a strong interest in financial topics.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q11" value="1"> I find numbers and financial concepts challenging and prefer other subjects.</li>
+                                </ol>
+                       
+                </div>
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>2. Which of the following skills do you believe you excel at?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"> <input type="radio" name="q12" value="3"> Planning and organizing events or projects.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q12" value="2"> Expressing creativity through arts, design, or writing.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q12" value="1"> Analyzing data and making informed decisions.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>3. When working on a project, what role do you naturally take on?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q13" value="3"> The one who manages the budget and financial aspects.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q13" value="2"> The one who contributes creative ideas and designs.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q13" value="1"> The one who conducts research and gathers data.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>4. How do you approach problem-solving?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q14" value="3"> I use a logical and analytical approach to identify solutions.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q14" value="2"> I explore different possibilities and think outside the box.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q14" value="1"> I seek advice from others and collaborate to find solutions.</li>
+                                </ol>
+                       
+                </div>    
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>5. Which skill do you believe is essential for business success?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q15" value="3"> Leadership and effective communication.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q15" value="2"> Creativity and innovation.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q15" value="1"> Analytical and critical thinking.</li>
+                                </ol>
+                       
+                </div>    
+                <button class="btn" type="button" onclick="submitSection(2)">Submit</button>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section id="section3" class="hidden ">
+                <h2>Section 3: Interests and Passions</h2>
+                <div class="question1">
+                        <div class="in-q1">
+                                <h1>1. How do you feel about working with numbers and financial data?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>                        
+                                
+                                        <li class="first-choice"> <input type="radio" name="q11" value="3"> I enjoy working with numbers and find financial concepts interesting.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q11" value="2"> I am comfortable with numbers but don't have a strong interest in financial topics.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q11" value="1"> I find numbers and financial concepts challenging and prefer other subjects.</li>
+                                </ol>
+                       
+                </div>
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>2. Which of the following skills do you believe you excel at?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"> <input type="radio" name="q12" value="3"> Planning and organizing events or projects.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q12" value="2"> Expressing creativity through arts, design, or writing.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q12" value="1"> Analyzing data and making informed decisions.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>3. When working on a project, what role do you naturally take on?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q13" value="3"> The one who manages the budget and financial aspects.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q13" value="2"> The one who contributes creative ideas and designs.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q13" value="1"> The one who conducts research and gathers data.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>4. How do you approach problem-solving?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q14" value="3"> I use a logical and analytical approach to identify solutions.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q14" value="2"> I explore different possibilities and think outside the box.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q14" value="1"> I seek advice from others and collaborate to find solutions.</li>
+                                </ol>
+                       
+                </div>    
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>5. Which skill do you believe is essential for business success?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q15" value="3"> Leadership and effective communication.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q15" value="2"> Creativity and innovation.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q15" value="1"> Analytical and critical thinking.</li>
+                                </ol>
+                       
+                </div>    
+                <button class="btn" type="button" onclick="submitSection(3)">Submit</button>
+            </section>
+
+
+            <section id="section4" class="hidden">
+                <h2>Section 4: Personality and Attitude</h2>
+                <div class="question1">
+                        <div class="in-q1">
+                                <h1>1. How do you feel about taking on leadership roles?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>                        
+                                
+                                        <li class="first-choice"><input type="radio" name="q16" value="3"> I am comfortable and enjoy leading others.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q16" value="2"> I am open to leadership but prefer collaborative roles.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q16" value="1"> I prefer to be a team member rather than a leader.</li>
+                                </ol>
+                       
+                </div>
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>2. How do you handle conflicts or disagreements in a group setting?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q17" value="3"> I facilitate open communication and work towards finding a resolution.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q17" value="2"> I listen to different perspectives and try to find common ground.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q17" value="1"> I avoid conflicts and may step back from the situation.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>3. Which statement best describes your work ethic?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q18" value="3"> I am proactive and take the initiative to get tasks done efficiently.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q18" value="2"> I am dedicated and complete tasks with consistent effort.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q18" value="1"> I complete tasks, but I may need reminders or motivation.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>4. How do you approach challenges or obstacles?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q19" value="3"> I am determined and face challenges head-on with a positive attitude.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q19" value="2"> I approach challenges with effort and perseverance.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q19" value="1"> I feel discouraged by challenges and may need encouragement.</li>
+                                </ol>
+                       
+                </div>    
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>5. What motivates you to excel academically and personally?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q20" value="3"> Setting ambitious goals and working hard to achieve them.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q20" value="2"> Pursuing activities that align with my interests and passions.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q20" value="1"> Seeking recognition and approval from others.</li>
+                                </ol>
+                       
+                </div>    
+                <button class="btn" type="button" onclick="submitSection(4)">Submit</button>
+        </section>    
+
+        <section id="section5" class="hidden">
+                <h2>Section 5: Career Goals and Aspirations</h2>
+                <div class="question1">
+                        <div class="in-q1">
+                                <h1>1. What kind of career path are you interested in pursuing in the future?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>                        
+                                
+                                        <li class="first-choice"><input type="radio" name="q21" value="3"> Business, Finance, or Entrepreneurship.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q21" value="2"> Arts, Media, or Communication.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q21" value="1"> Science, Technology, Engineering, or Mathematics.</li>
+                                </ol>
+                       
+                </div>
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>2. Which statement aligns with your future goals?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q22" value="3"> I aspire to run my own business or be a part of a business leadership team.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q22" value="2"> I see myself in a creative industry, contributing through arts, design, or writing.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q22" value="1"> I am interested in careers that involve problem-solving and research.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>3. What do you consider essential for a successful career?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q23" value="3"> Strong leadership and communication skills.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q23" value="2"> Creativity and the ability to think outside the box.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q23" value="1"> Analytical and critical thinking abilities.</li>
+                                </ol>
+                       
+                </div>        
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>4. How important is financial stability in your future plans?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q24" value="3"> Financial stability is a top priority for my future.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q24" value="2"> Financial stability is important, but it's not my sole focus.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q24" value="1"> Financial stability is not a primary concern for me.</li>
+                                </ol>
+                       
+                </div>    
+                <div class="question2">
+                        <div class="in-q1">
+                                <h1>5. What impact do you hope to make in your future career?</h1>
+                        </div>
+                        <div id="answer"></div>
+                                <ol>
+                                
+                                        <li class="first-choice"><input type="radio" name="q25" value="3"> I want to lead and create positive change within organizations.</li>
+        
+                                        <li class="second-choice"><input type="radio" name="q25" value="2"> I want to inspire and connect with others through creative expression.</li>
+        
+                                        <li class="third-choice"><input type="radio" name="q25" value="1"> I want to contribute to solving real-world problems and advancing knowledge.</li>
+                                </ol>
+                       
+                </div>    
+                <button class="btn" type="button" onclick="submitSection(5)">Submit</button>
+        </section> 
+
+            <!-- results section -->
+            <section id="result" class="hidden">
+                <div class="bord">
+                        <div class="in-div">
+                                <h2>Assessment Result</h2>
+                        </div>
+                        <img src="img/medal.png" alt="" class="h1">
+                <p id="result-description"></p>
+                
+        </div> 
+        <button id="restart-button" type="button" onclick="restartQuiz()">Restart</button>
+        <button type="button"><a href="home.html">Go to Home</a></button>
+            </section>
+
+        </form>
+    </div>
+
+    <script src="ABMtest.js"></script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+/* Main Content Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Raleway', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin-top: 80px;
+    height: calc(100svh - 80px);
+    margin-bottom: 35rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 12px;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+
+.navbar {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 6%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    border-bottom: solid black 1px;
+}
+
+.logo img {
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.bar .fa:hover {
+    background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 17px;
+    padding: 5px 5px;
+    padding-top: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    padding: 10px 10px;    
+    font-family: 'Outfit';
+}
+
+nav ul li a:hover {
+    background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+    transition: .3s;
+    color: white;
+    border-radius: 10px;
+}
+
+.bar {
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.dropdown {
+    align-items: center;
+    float: right;
+    overflow: hidden;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    min-width: 170px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.963);
+    right: 0;
+    margin-top: 0px;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: black;
+    font-family: 'Outfit';
+}
+
+.dropdown-content a:hover {
+    background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* Main */
+.cur-head {
+    background: rgba(193, 193, 193, 0.1176470588);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.head-video-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: -3px;
+}
+
+.head-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+.head-text {
+    padding: 0 8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 25px;
+}
+
+/* */
+
+.curriculum-introduction {
+    padding: 4rem;
+    padding-inline: 5rem;
+    background: #00000012;
+    position: relative;
+}
+
+.curriculum-introduction .logo-back {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+}
+.curriculum-introduction .logo-back img{
+    height: 100%;
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+.curriculum-introduction .intro-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: 5rem;
+    font-size: 24px;
+}
+
+
+.curriculum-introduction .back-style {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -22rem;
+    width: 100%;
+    height: auto;
+}
+
+.curriculum-introduction .back-style img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Specialization */
+.specialization-box {
+    padding: 3rem;
+    border: 5px solid black;
+    background: linear-gradient(to bottom right, #92FFC0, #002661);
+    border-radius: 1rem;
+    height: 580px;
+    position: relative;
+
+}
+
+.specialization-box .container {
+    padding: 3rem;
+    height: 480px;
+    position: relative;
+    z-index: 0;
+    border: 5px solid black;
+    background: linear-gradient(to bottom right, #65FDF0, #1D6FA3);
+    border-radius: 1rem;
+}
+
+.specialization-box .container .economics {
+    background: #ffffff60;
+    padding: .5rem;
+    width: 50%;
+    margin: auto;
+    font-size: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.specialization-box .container .details {
+    padding: 3rem 18rem 3rem 0;
+    text-align: justify;
+    font-size: 24px;
+    color: #323232;
+    font-weight: 600;
+    width: 80%;
+}
+
+.specialization-box .container .back-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 570px;
+    height: 430px;
+    bottom: 1rem;
+    object-fit: cover;
+    z-index: -100;
+
+}
+
+.specialization-box .container .back-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  */
+.page-container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page-container h3 {
+    font-size: 24px;
+}
+
+.page-container .button {
+    font-size: 4rem;
+    color: #0E5CAD;
+    cursor: pointer;
+}
+
+.page-container .button:hover {
+    color: #0e5badcd;
+}
+
+.page-container .box-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page-container .box {
+    width: 80px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #032A63;
+    transition: width 0.5s ease;
+}
+
+@media screen and (max-width: 1008px) {
+    body {
+        margin-top: 0;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .curriculum-introduction {
+        padding: 2rem;
+    }
+    .curriculum-introduction .head-text{
+        padding: 0.1rem;
+    }
+    .curriculum-introduction .back-style {
+        bottom: -10rem;
+    }
+    .curriculum-introduction .intro-text{
+        font-size: 16px;
+    }
+
+    .specialization-box {
+        margin-top: 150px;
+    }
+    .specialization-box .container .economics {
+        font-size: 20px;
+    }
+    .specialization-box .container .details {
+        padding: 1rem;
+        font-size: 18px;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .specialization-box .container .back-img {
+        width: 300px;
+        height: 250px;
+    }
+    .page-container h3 {
+        font-size: 18px;
+    }
+    .page-container .button {
+        font-size: 3rem;
+        padding: 5px;
+    }
+    .page-container .box {
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 746px) {
+
+    .specialization-box .container .economics {
+        font-size: 16px;
+        width: 100%;
+    }
+    .curriculum-introduction .head-text{
+        padding: 10px;
+    }
+    .specialization-box .container .details {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+    }
+    .curriculum-introduction .intro-text{
+        font-size: 17px;
+    }
+    .page-container .box {
+        width: 30px;
+        border-radius: 50%;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .page-container .box {
+        width: 15px;
+        border-radius: 50%;
+    }
+    .specialization-box .container .economics {
+        font-size: 16px;
+        width: 100%;
+    }
+    .curriculum-introduction .head-text{
+        padding: 10px;
+    }
+    .specialization-box .container .details {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+    }
+}
+
+/* Footer */
+footer{
+    background-color: white;
+    margin-top: 100px;
+}
+footer .head{
+    text-align: center;
+    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+}
+.head h1{
+    padding-top: 8px;
+    font-size: 20px;
+}
+.head .head-btn button{
+    background: transparent;
+    border: black 1px solid;
+    padding: 4px 20px;
+    border-radius: 18px;
+    margin: 5px 30px 10px 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.head .head-btn button:hover{
+    background-image: linear-gradient(to bottom right, #002661, #92FFC0);
+    color: white;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 22% 28%;
+  padding: 5px 30px;
+}
+.footer-grid-item {
+  font-size: 14px;
+  text-align: center;
+}
+.footer-grid-item h1{
+    font-size: 20px;
+    padding-top: 8px;
+}
+#first{
+    padding: 0 40px;
+}
+#first img{
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+    padding-top: 5px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#first p{
+    padding-top: 20px;
+}
+#second{
+    padding: 0 40px;
+    text-align: left;
+}
+#second p{
+    padding: 15px 0 10px 0;
+}
+#second i{
+    font-size: 20px;
+    margin-right: 12px;
+}
+#third a{
+    text-decoration: none;
+    color: black;
+}
+#third a:hover{
+    color: blue;
+}
+#fourth{
+    text-align: left;
+    padding: 0 20px 0 60px;
+}
+#fourth p{
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+#fourth .sendmail{
+    padding-top: 30px;
+    display: flex;
+}
+#fourth .sendmail input{
+    padding: 4px;
+    background: none;
+    border: solid 1px black;
+    width: 360px;
+}
+#fourth .sendmail button{
+    padding: 1px 10px;
+    background-image: linear-gradient(to bottom right, #002661, #92FFC0);
+    border: none;
+    cursor: pointer;
+}
+#fourth .sendmail button i{
+    font-size: 14px;
+}
+.footer-foot{
+    display: flex;
+    padding: 8px 0;
+    border-top: black 1px solid;
+}
+.footer-foot p{
+    margin: 0 auto;
+}
+.foot-icon i{
+    margin: 0 20px 0 0;
+    font-size: 20px;
+    color: black;
+}

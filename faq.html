@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Outfit:wght@600&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="faq.css">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="chatbox.js" defer></script>
+    <title>ABMconnectEd</title>
+</head>
+<body>
+
+  <div class="navbar">
+    <nav>
+        <h2 class="logo"><img src="img/logo.png" alt="" srcset=""></h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about-page">Overview</a></li>
+            <li><a href="curriculum.html">Curriculum Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="scholar.html">Scholarship Grants</a></li>
+            <div class="dropdown">
+                <button class="bar"><i style="font-size:28px;color:black;border-radius: 8px; width: 60px;height: 45px;padding-top: 9px; text-align: center;" class="fa">&#xf0c9;</i></button>
+                <div class="dropdown-content">
+                    <a href="roadmap.html">Career Pathways</a>
+                    <a href="assessment.html">Self Assessment</a>
+                    <a href="testimonial.html#student">Student Showcase</a>
+                    <a href="testimonial.html#testimony">Forums & Testimonial</a>
+                    <a href="testimonial.html#joincommunity">Join the Community</a>
+                    <a href="testimonial.html#oppo">Events & Opportunities</a>
+                    <a href="financial.html">Financial Literacy</a>
+                    <a href="scholar.html">ABM School Finder</a>
+                    <a href="aboutweb.html">About the website</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</div>
+
+
+  <div class="faq-content">
+    <h1>Accountancy, Business & Management Strand</h1>
+  <h2 class="faq">Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item" onclick="storeData1()">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">What is the ABM strand, and what subjects does it cover?
+        </h3>
+        <div class="faq-answer">The ABM strand stands for Accountancy, Business, and Management. It is one of the academic
+          tracks offered in senior high school or college, focusing on business-related subjects. Common subjects in the
+          ABM strand include Accounting, Business Mathematics, Principles of Marketing, Business Ethics and Social
+          Responsibility, Business Finance, Entrepreneurship, and Human Resource Management, among others.</div>
+      </div>
+
+      <div class="faq-item" onclick="storeData2()">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">What is the ABM strand in senior high school?</h3>
+        <div class="faq-answer">The ABM strand is one of the four specialized tracks in the Philippines' K-12 education
+          system, specifically designed for students interested in pursuing careers in the fields of accountancy,
+          business, economics, finance, marketing, entrepreneurship, and management.</div>
+      </div>
+
+
+      <div class="faq-item" onclick="storeData3()"">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">What are the career opportunities for ABM graduates?</h3>
+        <div class="faq-answer">ABM graduates have a wide range of career opportunities in various fields. Some of the
+          common career paths include becoming accountants, financial analysts, marketing professionals, human resource
+          managers, business consultants, and entrepreneurs.</div>
+      </div>
+
+      <div class="faq-item" onclick="storeData4()">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">Is the ABM strand only for those who want to pursue a career
+          in business?</h3>
+        <div class="faq-answer">While the ABM strand primarily focuses on business-related subjects, it also provides a
+          solid foundation in critical thinking, problem-solving, and communication skills, which are valuable in various
+          careers, not just limited to business.</div>
+      </div>
+
+      <div class="faq-item" onclick="storeData5()">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">Can students from the ABM strand pursue other non-business
+          courses in college?</h3>
+        <div class="faq-answer">Yes, students from the ABM strand can choose to pursue non-business courses in college.
+          The strand equips them with essential skills and knowledge that can be applicable in different fields, enabling
+          them to explore other academic paths if they wish.</div>
+      </div>
+
+      <div class="faq-item" onclick="storeData6()">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">Are there any prerequisites for choosing the ABM strand in
+          senior high school?</h3>
+        <div class="faq-answer">Generally, there are no strict prerequisites for choosing the ABM strand in senior high
+          school. However, students who have an interest in business, finance, economics, or management-related fields may
+          find this strand more suitable for their career goals.
+
+        </div>
+      </div>
+      <!-- Add more FAQ items as needed -->
+    </div>
+  </div>
+
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot" id="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi👋<br>How can I help you?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="head">
+        <h1>We're you able to find what you're looking for?</h1>
+        <div class="head-btn">
+            <!-- Modal after cliking -->
+            <button onclick="response()">YES</button>
+            <button onclick="noresponse()">NO</button>
+            <button onclick="noresponse()">Yes, But I had a hard time</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="footer-grid">
+            <div class="footer-grid-item" id="first">
+                <img src="img/logo.png">
+                <p>Bridging paths<br>Igniting potential<br>Fostering bonds</p>
+            </div>
+            <div class="footer-grid-item" id="second">
+                <h1>Contact Us</h1>
+                <p><i class="fa fa-phone"></i>09543132</p>
+                <p><i class="fa fa-envelope"></i>abmconnected@gmail.com</p>
+                <p><i class="fa fa-map-marker"></i>San Alberto</p>
+            </div>
+            <div class="footer-grid-item" id="third">
+                <h1>References</h1>
+                <a href="https://www.deped.gov.ph">https://www.deped.gov.ph</a>
+                <a href="https://www.scribd.com">https://www.scribd.com</a>
+                <a href="https://www.academia.edu.ph">https://www.academia.edu.ph</a>
+                <a href="https://www.ciit.edu.ph/what-is-abm-strand/">https://www.ciit.edu.ph</a>
+                <a href="https://www.coursera.org">https://www.coursera.org</a>
+                <a href="https://www.udemy.com">https://www.udemy.com</a>
+            </div>
+            <div class="footer-grid-item" id="fourth">
+                    <form action="insert_email.php" method="get">
+                            <h1>NewsLetter</h1>
+                            <p>Enter your email to get the latest catch sent to your inbox</p>
+                            <div class="sendmail">
+                                <input type="text" placeholder="Email Address"  name="email"  id="email" required>
+                                <button><i class="fa fa-arrow-right" onclick="return validateEmail();"></i></button>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-foot">
+        <p>© 2023-All rights Reserved by ABMconnectED</p>
+        <div class="foot-icon">
+            <a href="https://www.facebook.com/profile.php?id=100095476780060"><i class="fa fa-facebook-f"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/abmcnntd"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+  <!-- JavaScript code to toggle FAQ answers and track clicks -->
+  <script>
+    function toggleAnswer(question) {
+      var answer = question.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+        trackFAQClick(question.textContent);
+      }
+    }
+
+    function trackFAQClick(questionText) {
+      gtag('event', 'FAQ Click', {
+        'event_category': 'FAQ',
+        'event_label': questionText
+      });
+    }
+  </script>
+
+  <!-- Google Analytics Tracking Code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'YOUR_TRACKING_ID');
+
+
+    function storeData1() {
+            const data = {
+                click1: 1
+            };  
+    
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_data1.php", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Response from the server
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    function storeData2() {
+            const data = {
+                click2: 1
+            };  
+    
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_data2.php", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Response from the server
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    function storeData3() {
+            const data = {
+                click3: 1
+            };  
+    
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_data3.php", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Response from the server
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    function storeData4() {
+            const data = {
+                click4: 1
+            };  
+    
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_data4.php", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Response from the server
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    function storeData5() {
+            const data = {
+                click5: 1
+            };  
+    
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_data5.php", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Response from the server
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    function storeData6() {
+            const data = {
+                click6: 1
+            };  
+    
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_data6.php", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText); // Response from the server
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+
+        function response(){
+            alert("Thank you for your response!");
+        }
+        function noresponse(){
+            alert("Thank you for your response! We will try to improve the website further.");
+        }
+  </script>
+</body>
+
+</html>

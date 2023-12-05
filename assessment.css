@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Raleway', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.navbar {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7%;
+  padding-right: 6%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  font-size: 15px;
+  border-bottom: solid black 1px;
+}
+
+.logo img {
+  width: 120px;
+  height: 70px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.bar .fa:hover {
+  background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 5px;
+  padding-top: 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  align-items: center;
+  color: black;
+  padding: 10px 10px;    
+  font-family: 'Outfit';
+}
+
+nav ul li a:hover {
+  background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+  transition: .3s;
+  color: white;
+  border-radius: 10px;
+}
+
+.bar {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.dropdown {
+  align-items: center;
+  float: right;
+  overflow: hidden;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  min-width: 170px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.963);
+  right: 0;
+  margin-top: 0px;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: black;
+  font-family: 'Outfit';
+}
+
+.dropdown-content a:hover {
+  background-image: linear-gradient(to bottom right, #92FFC0, #002661);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+.land-img {
+  width: 100%;
+  height: 95vh;
+  display: inline-flex;
+  gap: 3rem;
+  padding: 4vh 5vh;
+  margin-top: 70px;
+}
+
+.left-s {
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.left-s .up-s {
+  width: 72%;
+  height: 35%;
+  background-color: rgb(211, 211, 211, 0.3);
+  margin-top: 1vh;
+  margin-left: 6vh;
+  border-radius: 550px;
+  padding-bottom: 1vh;
+}
+
+.up-s img {
+  width: 100%;
+}
+
+.left-s .down-s {
+  margin-top: 9vh;
+  width: 100%;
+  height: 40%;
+}
+
+.down-s p {
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.down-s button {
+  margin-top: 5vh;
+  margin-left: 3vh;
+  background-color: rgb(211, 211, 211, 0.3);
+  border-radius: 15px;
+  border: none;
+  width: 90%;
+}
+.down-s button:hover{
+  background-color: #002661;
+  transition: 1s;
+}
+
+.down-s a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.9rem;
+  text-align: center;
+}
+.down-s a:hover {
+  transition: 1s;
+  color: #92FFC0;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.right-s {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-s .up-q {
+  width: 100%;
+  height: 25%;
+  /* background-color: #002661; */
+  border-bottom: 7px solid;
+  margin-bottom: 2vh;
+}
+.up-q img{
+  width: 80%;
+  margin-left: 9vh;
+}
+
+.right-s .mid-q {
+  width: 100%;
+  height: 8vh;
+  background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);
+  margin-bottom: 5vh;
+}
+
+.right-s .down-q {
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);
+  padding-bottom: 5vh;
+  border-radius: 15px;
+}
+.down-q img{
+  width: 110%;
+  margin-left: -4vh;
+  height: 330px;
+}
+
+
+/* Footer */
+footer{
+  background-color: white;
+  margin-top: 100px;
+}
+footer .head{
+  text-align: center;
+  border-bottom: black solid 1px;
+  border-top: black solid 1px;
+}
+.head h1{
+  padding-top: 8px;
+  font-size: 20px;
+}
+.head .head-btn button{
+  background: transparent;
+  border: black 1px solid;
+  padding: 4px 20px;
+  border-radius: 18px;
+  margin: 5px 30px 10px 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.head .head-btn button:hover{
+  background-image: linear-gradient(to bottom right, #002661, #92FFC0);
+  color: white;
+}
+.footer-grid {
+display: grid;
+grid-template-columns: 25% 25% 22% 28%;
+padding: 5px 30px;
+}
+.footer-grid-item {
+font-size: 14px;
+text-align: center;
+}
+.footer-grid-item h1{
+  font-size: 20px;
+  padding-top: 8px;
+}
+#first{
+  padding: 0 40px;
+}
+#first img{
+  width: 120px;
+  height: 70px;
+  cursor: pointer;
+  padding-top: 5px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+#first p{
+  padding-top: 20px;
+}
+#second{
+  padding: 0 40px;
+  text-align: left;
+}
+#second p{
+  padding: 15px 0 10px 0;
+}
+#second i{
+  font-size: 20px;
+  margin-right: 12px;
+}
+#third a{
+  text-decoration: none;
+  color: black;
+}
+#third a:hover{
+  color: blue;
+}
+#fourth{
+  text-align: left;
+  padding: 0 20px 0 60px;
+}
+#fourth p{
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+#fourth .sendmail{
+  padding-top: 30px;
+  display: flex;
+}
+#fourth .sendmail input{
+  padding: 4px;
+  background: none;
+  border: solid 1px black;
+  width: 360px;
+}
+#fourth .sendmail button{
+  padding: 1px 10px;
+  background-image: linear-gradient(to bottom right, #002661, #92FFC0);
+  border: none;
+  cursor: pointer;
+}
+#fourth .sendmail button i{
+  font-size: 14px;
+}
+.footer-foot{
+  display: flex;
+  padding: 8px 0;
+  border-top: black 1px solid;
+}
+.footer-foot p{
+  margin: 0 auto;
+}
+.foot-icon i{
+  margin: 0 20px 0 0;
+  font-size: 20px;
+  color: black;
+}
